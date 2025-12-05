@@ -2,7 +2,6 @@ from fractions import Fraction
 from math import sqrt
 from fractions import Fraction
 import sympy as sp
-import ast
 
 def run_simplex(points, function, reflexion=1, contraction=Fraction(1,2), expansion=2, epsilon=None, n_iter=4):
     def f(P):
@@ -158,5 +157,6 @@ Pg, Fg = run_simplex(points, user_function,
 print("\nOptimization result:")
 print("Centroid Pg =", Pg)
 print("Function at Pg =", Fg)
+
 
 
