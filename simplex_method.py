@@ -133,7 +133,7 @@ epsilon_input = input("Enter epsilon (leave blank (and press enter) if number of
 epsilon = float(epsilon_input) if epsilon_input else None
 
 n_iter_input = input("Enter max iterations (leave blank for default 4): ")
-n_iter = int(n_iter_input) if n_iter_input else None
+n_iter = int(n_iter_input) if n_iter_input else 4
 
 reflexion_input = input("Enter reflection coefficient (leave blank for default 1): ")
 reflexion = float(reflexion_input) if reflexion_input else 1
@@ -157,6 +157,7 @@ Pg, Fg = run_simplex(points, user_function,
 print("\nOptimization result:")
 print("Centroid Pg =", Pg)
 print("Function at Pg =", Fg)
+
 
 
 
